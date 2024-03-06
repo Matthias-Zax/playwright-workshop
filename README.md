@@ -1,6 +1,6 @@
-# Playwright End to End suite template
+# Playwright End to End Workshop
 
-End to End testing suite template using:
+End to End testing suite using:
 
 - Playwright https://playwright.dev/
 - TypeScript https://www.typescriptlang.org/
@@ -8,12 +8,11 @@ End to End testing suite template using:
 
 ## 🤖 Starting up
 
-We have created a sample [Clerk](https://www.clerk.dev/) app which showcases the existing example, so feel free to play around!
+We have created a sample [Toolshop](https://practicesoftwaretesting.com/#/) app which showcases the existing example, so feel free to play around!
 
 1. Install the dependencies using `npm install` or `yarn install`
-2. Rename `.env.example` to `.env`
-3. Check out the test by running the `test` or the `test:debug` command
-4. Have fun building something!
+2. Check out the test by running the `npx playwright test` 
+3. Have fun!
 
 ## 📁 Structure
 
@@ -21,7 +20,7 @@ We have created a sample [Clerk](https://www.clerk.dev/) app which showcases the
  |- tests # Here is the magic 🧙‍♂️
  |-- locator-demo.spec.ts # Working with locators
  |-- toolshop-tests.spec.ts # Writing e2e tests for the Toolshop
- |  playwright.config.ts # Configuration file
+ |playwright.config.ts # Configuration file
 ```
 
 ## 🔨 Work with the Repository
