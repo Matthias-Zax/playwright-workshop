@@ -18,28 +18,22 @@ We have created a sample [Clerk](https://www.clerk.dev/) app which showcases the
 ## 📁 Structure
 
 ```sh
- |- config # Configuration file/s
- |- external # External system interactions e.g. Database
- |- fixtures # Predefined fixture sets & their factory functions e.g. createSignupAttributes
- |- pages # Sets of pages for our applications
  |- tests # Here is the magic 🧙‍♂️
+ |-- locator-demo.spec.ts # Working with locators
+ |-- toolshop-tests.spec.ts # Writing e2e tests for the Toolshop
+ |  playwright.config.ts # Configuration file
 ```
 
-## 🔨 Build your own
+## 🔨 Work with the Repository
 
-To start building something with the suite template:
+To start ...
 
-1. Read this brief document.
-2. Read the Pages [README](./src/pages/README.md).
-3. Dig in the documentation of the tools as you see fit.
-
-## 📜 Pages
-
-For the suite template we chose to follow the PageObjects pattern in order to encapsulate each pages internal structure and responsibilities inside its own highly cohesive class file.
-
-That means that for each page we would define a new Page object for our needs. We should not confuse the Page objects we create with actual pages in the application. We can think of Pages as a lightweight concept of a **view**, which is the set of cohesive elements living under a known browser location.
-
-For more on how we structure views internally see the pages [README](./src/pages/README.md).
+1. Clone the Repository "git clone"
+2. Import the project in your Visual Studio Code
+3. Install Playwright for Testing Plugin
+4. Solve Locator File
+5. Solve Toolshop File
+6. (Optional) Follow the Page Object Pattern
 
 ## 🔬 Using data-test-id to target elements
 
@@ -56,10 +50,6 @@ Also you can take a look at Playwright's take on [selection best practices](http
 Our test suit is configured to run using Jest as a testing framework and [jest-playwright](https://github.com/playwright-community/jest-playwright) acting as the glue between Jest and Playwright.
 
 **jest-playwright** has more than a couple of ways to configure the suite so please refer to the [documentation](https://github.com/playwright-community/jest-playwright#configuration).
-
-## 👔 Individual test configuration
-
-In some cases, we might need to run a test with specific suite configurations e.g. _only for a specific browser_ . For those cases we can use the `it.jestPlaywrightConfig` wrapper which allows specific `jest-playwright` options to be passed directly into the test.
 
 ## 🎬 Debugging
 
